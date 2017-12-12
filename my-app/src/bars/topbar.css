@@ -1,0 +1,8 @@
+.topBar
+{
+  position: fixed;
+  top: 0px;
+  width:100%;
+  background-color: pink;
+  height: 10%;
+}

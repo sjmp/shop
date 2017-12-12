@@ -1,0 +1,8 @@
+.container
+{
+  position: fixed;
+  width: 100%;
+  background-color: goldenrod;
+  height: 90%;
+  bottom: 0px;
+}

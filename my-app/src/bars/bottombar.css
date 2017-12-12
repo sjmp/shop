@@ -1,0 +1,8 @@
+.bottomBar
+{
+  position: fixed;
+  bottom: 0px;
+  width:100%;
+  background-color: cyan;
+  height: 10%;
+}
