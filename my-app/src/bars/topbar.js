@@ -6,7 +6,7 @@ class TopBar extends React.Component {
   render() {
     return (
       <div className="topBar">
-        TopBar
+        <h1>I.J. PARTRIDGE & SON</h1>
       </div>
     );
   }

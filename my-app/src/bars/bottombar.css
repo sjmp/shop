@@ -3,6 +3,7 @@
   position: fixed;
   bottom: 0px;
   width:100%;
-  background-color: cyan;
+  background-color: #3E5E5F;
+  color: white;
   height: 10%;
 }

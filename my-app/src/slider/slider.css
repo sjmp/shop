@@ -1,0 +1,14 @@
+.slick-slider
+{
+  position: fixed;
+  width: 90%;
+  height: 94%;
+  left: 5%;
+  right: 5%;
+  top: 2%;
+  bottom: 2%
+}
+
+.slick-slider div {
+  height: 100%;
+}
