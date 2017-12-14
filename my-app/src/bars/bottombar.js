@@ -1,11 +1,11 @@
 import React from 'react';
-import './bottombar.css';
+import './bar.css';
 
 class BottomBar extends React.Component {
 
   render() {
     return (
-      <div className="bottomBar">
+      <div className="bottomBar bar">
         BottomBar
       </div>
     );
