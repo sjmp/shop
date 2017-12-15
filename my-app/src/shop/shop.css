@@ -2,5 +2,7 @@
 {
   width: 90%;
   margin: 0 auto;
-  background-color: #9E6766;
+  background-color: #215237 ;
+  border: 5px solid #c5b792;
+  border-style:double;
 }
