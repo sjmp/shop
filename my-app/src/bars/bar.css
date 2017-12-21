@@ -8,15 +8,26 @@
     border-bottom: 5px solid #c5b792;
   border-top-style:double;
   border-bottom-style:double;
+
 }
 
 .topBar
 {
   top: 0px;
-
 }
 
 .bottomBar
 {
   bottom: 0px;
+}
+
+.title {
+  width: 80%;
+  display: inline-block;
+}
+
+.react-countdown-clock {
+  top: 0;
+  position: absolute;
+  float: right;
 }

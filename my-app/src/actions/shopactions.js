@@ -3,9 +3,9 @@ export const testAction = () => {
     type: "TEST",
     shops: {
       "shops": [
-        {"name":"Drury Lane", "cost":10},
-        {"name":"Liverpool Street", "cost":20},
-        {"name":"Coventry Way", "cost":30},
+        {"name":"Drury Lane", "income":10},
+        {"name":"Liverpool Street", "income":20},
+        {"name":"Coventry Way", "income":30},
       ]
     }
   }
