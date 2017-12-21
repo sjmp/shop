@@ -8,8 +8,8 @@ class Shop extends React.Component {
 
     return (
       <div className="item shop">
-        <span className="image"></span>
-        <h2>{this.props.data.name}</h2>
+        <div className="image image-shop"></div>
+        <h1>{this.props.data.name}</h1>
         <h5>Turnover £{this.props.data.income}</h5>
       </div>
     );

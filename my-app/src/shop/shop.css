@@ -16,10 +16,33 @@
   margin: 0 auto;
   border: 5px solid #c5b792;
   border-style:double;
+  color: #1a1d20 ;
 }
 
 .image
 {
-  height: 20%;
-  width: 20%;
+  border: 5px solid #c5b792;
+  border-style:double;
+   border-radius: 50%;
+  margin: 0 auto;
+  height: 30%;
+  width: 50%;
+
+  background-size: cover;
+}
+
+.image-shop{
+    background-image: url('001.jpg');
+}
+
+.image-plot{
+    background-image: url('002.jpg');
+}
+
+.button {
+  background-color: #1a1d20;
+  margin: 0 auto;
+  width: 60%;
+  padding: 20px;
+  color: #c5b792;
 }
