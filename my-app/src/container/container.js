@@ -26,7 +26,7 @@ class Container extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    shops: state.shops.shops
+    shops: state.shop.shops
 });
 
 export default withRouter(connect(mapStateToProps)(Container));

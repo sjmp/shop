@@ -1,10 +1,10 @@
-import shops from './shopreducer.js';
+import shop from './shopreducer.js';
 
 import { combineReducers } from 'redux';
 
 const rootReducer = combineReducers(
   {
-    shops
+    shop
   }
 );
 

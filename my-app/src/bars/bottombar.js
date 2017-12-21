@@ -1,21 +1,24 @@
 import React from 'react';
 import './bar.css';
 
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
+
 class BottomBar extends React.Component {
 
   render() {
     return (
         <div className="bottomBar bar">
-          BottomBar
-          <div className="bottomBar">
-            <p>PROFIT: £500 PER DAY</p>
-            <p>£2500 GROSS - £2000 NET</p>
-            <p>MONEY IN BANK: £5300</p>
-          </div>
-          </div>
-          );
-          }
+          <h2>BANK £{this.props.bank} - INCOME £{this.props.income}</h2>
+        </div>
+        );
+      }
 
-          }
+  }
 
-export default BottomBar;
+  const mapStateToProps = state => ({
+    bank: state.shop.bank,
+    income: state.shop.income
+  });
+
+  export default withRouter(connect(mapStateToProps)(BottomBar));

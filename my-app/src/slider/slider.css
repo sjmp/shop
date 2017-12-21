@@ -9,6 +9,14 @@
   bottom: 2%
 }
 
-.slick-slider div {
+.slick-slide {
+  height: 100%;
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
   height: 100%;
 }

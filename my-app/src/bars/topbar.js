@@ -1,37 +1,35 @@
 import React from 'react';
 import './bar.css';
-import Countdown from 'react-countdown-clock';
+  import Countdown from 'react-countdown-clock';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
 
+import * as ShopActions from '../actions/shopactions.js'
 
 class TopBar extends React.Component {
 
   state = {
-    countdown: this.returnCountdown()
+    seconds: 5
   }
 
   onTimerEnd(){
     this.setState({
-      countdown: this.returnCountdown()
+      seconds: 5
     })
-  }
 
-  returnCountdown(){
-    return (
-      <Countdown key={Date.now()} seconds={5}
-                     color="#000"
-                     alpha={0.9}
-                     size={70}
-                     onComplete={() => this.onTimerEnd()}/>
-    )
+    this.props.dispatch(ShopActions.revenueCount());
   }
 
   render() {
     return (
       <div className="topBar bar">
         <h1 className="title">I.J. PARTRIDGE & SONS</h1>
-        { this.state.countdown }
+        <Countdown key={Date.now()}
+                      seconds={this.state.seconds}
+                      color="#c5b792"
+                      alpha={0.9}
+                      size={75}
+                      onComplete={() => this.onTimerEnd()}/>
       </div>
     );
   }

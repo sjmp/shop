@@ -1,8 +1,25 @@
 .shop
 {
-  width: 90%;
-  margin: 0 auto;
   background-color: #215237 ;
+}
+
+.plot
+{
+
+  background-color: #213c52;
+
+}
+
+.item {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
   border: 5px solid #c5b792;
   border-style:double;
+}
+
+.image
+{
+  height: 20%;
+  width: 20%;
 }

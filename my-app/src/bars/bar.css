@@ -22,11 +22,12 @@
 }
 
 .title {
-  width: 80%;
+  width: 70%;
   display: inline-block;
 }
 
 .react-countdown-clock {
+  padding-top: 1px;
   top: 0;
   position: absolute;
   float: right;

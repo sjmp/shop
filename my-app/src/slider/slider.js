@@ -1,7 +1,10 @@
 import React from 'react';
 import Slider from 'react-slick';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
 import Shop from '../shop/shop.js';
+import Plot from '../shop/plot.js';
 
 import './slider.css';
 
@@ -21,7 +24,15 @@ class ShopSlider extends React.Component {
       ]
     };
 
-    const shops = this.props.shops ? this.props.shops.shops.map( (item, i) => <div key={i}><Shop data={ item }/></div> ) : null;
+
+    const shops = this.props.shops.shops ?
+      this.props.shops.shops.map( (item, i) =>
+      <div key={i}>
+        {this.props.userShops.includes(item.id) ?
+          <Shop data={ item }/>
+          : <Plot data={item}/> }
+      </div> )
+      : null;
 
     return (
       <Slider {...settings}>
@@ -33,4 +44,10 @@ class ShopSlider extends React.Component {
 }
 
 
-export default ShopSlider;
+
+
+const mapStateToProps = state => ({
+  userShops: state.shop.user.ownedShopIds
+});
+
+export default withRouter(connect(mapStateToProps)(ShopSlider));
