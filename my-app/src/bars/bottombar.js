@@ -12,6 +12,7 @@ class BottomBar extends React.Component {
             <p>£2500 GROSS - £2000 NET</p>
             <p>MONEY IN BANK: £5300</p>
           </div>
+          </div>
           );
           }
 
