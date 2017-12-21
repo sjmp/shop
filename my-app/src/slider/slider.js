@@ -21,15 +21,11 @@ class ShopSlider extends React.Component {
       ]
     };
 
-      console.log(this.props);
+    const shops = this.props.shops ? this.props.shops.shops.map( (item, i) => <div key={i}><Shop data={ item }/></div> ) : null;
 
     return (
       <Slider {...settings}>
-        <div><Shop /></div>
-        <div><Shop /></div>
-        <div><Shop /></div>
-        <div><Shop /></div>
-        <div><Shop /></div>
+        {shops}
       </Slider>
     );
 

@@ -1,5 +1,5 @@
 const initialState = {
-  shops: "NO"
+  shops: []
 }
 
 const Shops = (state = initialState, action) => {
