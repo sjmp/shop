@@ -46,3 +46,11 @@
   padding: 20px;
   color: #c5b792;
 }
+
+.infobox{
+    background-color: #c5b792;
+    color: #1a1d20;
+    padding: 20px;
+    margin: 0 auto;
+    width: 60%;
+}

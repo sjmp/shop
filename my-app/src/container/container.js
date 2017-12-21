@@ -11,7 +11,10 @@ import './container.css';
 class Container extends React.Component {
 
   componentWillMount = () =>{
-    this.props.dispatch(ShopActions.testAction());
+    if (this.props.bank == 0){
+
+      this.props.dispatch(ShopActions.testAction());
+    }
 
   }
 
@@ -26,7 +29,8 @@ class Container extends React.Component {
 }
 
 const mapStateToProps = state => ({
-    shops: state.shop.shops
+    shops: state.shop.shops,
+    bank: state.shop.bank
 });
 
 export default withRouter(connect(mapStateToProps)(Container));

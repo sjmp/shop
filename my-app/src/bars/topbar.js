@@ -9,12 +9,12 @@ import * as ShopActions from '../actions/shopactions.js'
 class TopBar extends React.Component {
 
   state = {
-    seconds: 5
+    seconds: 20
   }
 
   onTimerEnd(){
     this.setState({
-      seconds: 5
+      seconds: 20
     })
 
     this.props.dispatch(ShopActions.revenueCount());
