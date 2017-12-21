@@ -6,6 +6,7 @@ import Shop from '../shop/shop.js';
 import './slider.css';
 
 class ShopSlider extends React.Component {
+
   render() {
     var settings = {
       dots: true,
@@ -19,6 +20,8 @@ class ShopSlider extends React.Component {
 
       ]
     };
+
+      console.log(this.props);
 
     return (
       <Slider {...settings}>
