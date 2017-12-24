@@ -11,7 +11,7 @@ import './container.css';
 class Container extends React.Component {
 
   componentWillMount = () =>{
-    if (this.props.bank == 0){
+    if (this.props.bank === 0){
 
       this.props.dispatch(ShopActions.testAction());
     }

@@ -9,7 +9,7 @@ import * as ShopActions from '../actions/shopactions.js'
 class TopBar extends React.Component {
 
   state = {
-    seconds: 20
+    seconds: 1
   }
 
   onTimerEnd(){

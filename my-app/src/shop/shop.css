@@ -16,7 +16,7 @@
   margin: 0 auto;
   border: 5px solid #c5b792;
   border-style:double;
-  color: #1a1d20 ;
+  color: white ;
 }
 
 .image
@@ -45,6 +45,7 @@
   width: 60%;
   padding: 20px;
   color: #c5b792;
+  font-size: 20px;
 }
 
 .infobox{
@@ -53,4 +54,10 @@
     padding: 20px;
     margin: 0 auto;
     width: 60%;
+      font-size: 20px;
+}
+
+.descbox{
+  font-size: 20px;
+  margin-bottom: 20px;
 }
