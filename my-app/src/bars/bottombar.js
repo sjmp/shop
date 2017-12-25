@@ -9,7 +9,7 @@ class BottomBar extends React.Component {
   render() {
     return (
         <div className="bottomBar bar">
-          <h2>BANK £{this.props.bank} - INCOME £{this.props.income}</h2>
+          <h2 className="stats">BANK £{this.props.bank} - INCOME £{this.props.income}</h2>
         </div>
         );
       }

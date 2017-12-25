@@ -14,7 +14,7 @@ class TopBar extends React.Component {
 
   onTimerEnd(){
     this.setState({
-      seconds: 20
+      seconds: 10
     })
 
     this.props.dispatch(ShopActions.revenueCount());
@@ -28,7 +28,7 @@ class TopBar extends React.Component {
                       seconds={this.state.seconds}
                       color="#c5b792"
                       alpha={0.9}
-                      size={75}
+                      size={67}
                       onComplete={() => this.onTimerEnd()}/>
       </div>
     );
