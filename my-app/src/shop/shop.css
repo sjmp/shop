@@ -1,23 +1,22 @@
 .shop
 {
-  background-color: #215237 ;
+  background-color: #f4f1de;
+  color: #0d141f;
 }
 
 .plot
 {
-
-  background-color: #213c52;
+  background-color: #0d141f;
+  color: #f4f1de;
 
 }
 
 .item {
-  width: 90%;
+  width: 92%;
   height: 100%;
   margin: 0 auto;
-  border: 5px solid #c5b792;
-  border-style:double;
-  color: white;
-  /* border-radius: 10%; */
+
+  box-shadow: 0 3px 2px #0E1521;
 }
 
 .image
@@ -30,36 +29,72 @@
 }
 
 .image-shop{
-    background-image: url('001.jpg');
+  background-image: url('001.jpg');
 }
 
 .image-plot{
-    background-image: url('002.jpg');
+  background-image: url('002.jpg');
 }
 
 .button {
-  background-color: #1a1d20;
+  background-color: #e1ce7a ;
   margin: 0 auto;
-  width: 60%;
-  padding: 20px;
-  color: #c5b792;
+  width: 80%;
+  padding: 16px;
+  color: #0d141f;
   font-size: 20px;
+  box-shadow: 0 2px 2px #0d141f;
 }
 
 .infobox{
-    background-color: #c5b792;
-    color: #1a1d20;
-    padding: 20px;
-    margin: 0 auto;
-    width: 60%;
-      font-size: 20px;
+  background-color: #c5b792;
+  color: #1a1d20;
+  padding: 16px;
+  margin: 0 auto;
+  width: 60%;
+  font-size: 20px;
+  box-shadow: 0 2px 2px #777;
+  font-size: 16px;
 }
 
 .descbox{
   font-size: 20px;
   margin-bottom: 20px;
+  font-size: 16px;
+  padding: 16px;
 }
 
 .itemTitle{
-  margin: 5px;
+  font-size: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+}
+
+.budgetBar{
+  background-color: #0d141f;
+  color: #f4f1de;
+  margin: 0 auto;
+  width: 80%;
+  padding: 8px;
+  font-size: 20px;
+  box-shadow: 0 2px 2px #0d141f;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.budgetBar div{
+  display: table-cell;
+}
+
+.budgetButton{
+  font-weight: 900;
+  background-color: #e1ce7a ;
+  color: #0d141f;
+  padding: 8px 16px 8px 16px;
+}
+
+.budget{
+  line-height: 200%;
 }

@@ -18,10 +18,9 @@ class Plot extends React.Component {
     return (
       <div className="item plot">
         <div className="image image-plot"></div>
-        <h1 className="itemTitle">FOR SALE</h1>
-        <h1 className="itemTitle">{this.props.data.name}</h1>
-        <div className="descbox">{this.props.data.description}</div>
         <div onClick={() => this.purchasePlot(this.props.data)} className="button">Purchase for £{this.props.data.purchaseCost}</div>
+        <div className="itemTitle">{this.props.data.name}</div>
+        <div className="descbox">{this.props.data.description}</div>
       </div>
     );
   }

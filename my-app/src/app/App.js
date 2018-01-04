@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import Container from '../container/container.js';
-import TopBar from '../bars/topbar.js';
-import BottomBar from '../bars/bottombar.js';
+
 import {
   BrowserRouter,
   Route
@@ -17,9 +16,10 @@ class App extends Component {
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
           <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
           <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' />
-          <TopBar/>
+          <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' />
+
           <Route path="/" exact component={ Container } />
-          <BottomBar/>
+
         </div>
       </BrowserRouter>
     );

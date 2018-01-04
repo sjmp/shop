@@ -1,25 +1,22 @@
 .bar {
-    position: fixed;
+  position: fixed;
   width:100%;
-  background-color: #213c52;
-  color: #c5b792;
-    height: 9.1%;
-  border-top: 5px solid #c5b792;
-    border-bottom: 5px solid #c5b792;
-  border-top-style:double;
-  border-bottom-style:double;
+  color: #e1ce7a;
+
   margin: 0px;
-
+  text-align: center;
 }
 
-.topBar
-{
+.topBar {
   top: 0px;
+    height: 9.1%;
+      font-family: 'Playfair Display';
+
 }
 
-.bottomBar
-{
+.bottomBar {
   bottom: 0px;
+    height: 5%;
 }
 
 .title {
@@ -37,4 +34,26 @@
 
 .stats{
   margin: 0px;
+}
+
+.retire{
+   border-radius: 50%;
+   background-color: #e1ce7a;
+   color: #213c52;
+   float: right;
+   position: absolute;
+   right: 0;
+   top: 0;
+   height: 60px;
+   width: 60px;
+   box-shadow: 0 2px 2px #777;
+   cursor: pointer;
+   display:table;
+
+}
+
+.retireText{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
 }

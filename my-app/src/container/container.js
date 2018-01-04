@@ -5,6 +5,8 @@ import { withRouter } from 'react-router-dom';
 import ShopSlider from '../slider/slider.js';
 
 import * as ShopActions from '../actions/shopactions.js'
+import TopBar from '../bars/topbar.js';
+import BottomBar from '../bars/bottombar.js';
 
 import './container.css';
 
@@ -20,9 +22,15 @@ class Container extends React.Component {
 
   render() {
     return (
+
       <div className="container" >
-        <ShopSlider shops={this.props.shops}/>
+      <TopBar/>
+        <div className="innerContainer">
+          <ShopSlider shops={this.props.shops}/>
+        </div>
+        <BottomBar/>
       </div>
+
     );
   }
 

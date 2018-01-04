@@ -9,15 +9,29 @@ import * as ShopActions from '../actions/shopactions.js'
 class TopBar extends React.Component {
 
   state = {
-    seconds: 1
+    seconds: 30,
+    paused: false
   }
 
   onTimerEnd(){
+    console.log("END");
     this.setState({
-      seconds: 10
+      seconds: 30,
+      paused: false
     })
 
     this.props.dispatch(ShopActions.revenueCount());
+  }
+
+  pauseClock(){
+    this.setState({
+      paused: !this.state.paused
+    })
+  }
+
+  retire(){
+    this.props.dispatch(ShopActions.restartGame());
+    this.props.dispatch(ShopActions.testAction());
   }
 
   render() {
@@ -26,10 +40,16 @@ class TopBar extends React.Component {
         <h1 className="title">I.J. PARTRIDGE & SONS</h1>
         <Countdown key={Date.now()}
                       seconds={this.state.seconds}
-                      color="#c5b792"
+                      color="#e1ce7a"
                       alpha={0.9}
-                      size={67}
-                      onComplete={() => this.onTimerEnd()}/>
+                      size={60}
+                      onComplete={() => this.onTimerEnd()}
+                      paused={this.state.paused}
+                      onClick={() => this.pauseClock()}
+                      pausedText= {"▐▐ "}/>
+        <div onClick={() => this.retire()} className="retire">
+          <p className="retireText">RETIRE</p>
+        </div>
       </div>
     );
   }

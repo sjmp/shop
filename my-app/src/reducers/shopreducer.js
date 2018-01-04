@@ -51,6 +51,9 @@ const Shops = (state = initialState, action) => {
         income: newIncome
       }
 
+    case 'RESTART_GAME':
+      return initialState;
+
     default:
       return state;
   }
