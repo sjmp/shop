@@ -27,10 +27,13 @@ class Shop extends React.Component {
         <div className="image image-shop"></div>
         <div className="itemTitle">{this.props.data.name}</div>
         <div className="descbox">{this.props.data.description}</div>
-        <div className="budgetBar">
-          <div className="budgetButton minus" onClick={() => this.downBudget()}>-</div>
-          <div className="budget">£{this.state.budget}</div>
-          <div className="budgetButton plus" onClick={() => this.upBudget()}>+</div>
+        <div className="shopContainer">
+          <div className="budgetButton" onClick={() => this.downBudget()}>-</div>
+          <div className="shopInner">£{this.state.budget}</div>
+          <div className="budgetButton" onClick={() => this.upBudget()}>+</div>
+        </div>
+        <div className="shopContainer">
+          <div className="shopInner">LAST MONTH'S PROFIT</div>
         </div>
       </div>
     );

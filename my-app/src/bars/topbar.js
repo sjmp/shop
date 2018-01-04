@@ -9,14 +9,14 @@ import * as ShopActions from '../actions/shopactions.js'
 class TopBar extends React.Component {
 
   state = {
-    seconds: 30,
+    seconds: 10,
     paused: false
   }
 
   onTimerEnd(){
     console.log("END");
     this.setState({
-      seconds: 30,
+      seconds: 10,
       paused: false
     })
 
